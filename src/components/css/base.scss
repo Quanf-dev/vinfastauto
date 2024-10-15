@@ -1,0 +1,9 @@
+html,
+body {
+  @apply bg-colors-bgColor text-colors-textPrimaryColor font-font;
+  scrollbar-width: none;
+}
+.custom-border {
+  border: 4px solid;
+  border-image-source: linear-gradient(90.38deg, #696969 28.1%, #ffffff 100%);
+}
