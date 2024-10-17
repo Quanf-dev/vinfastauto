@@ -3,7 +3,35 @@ body {
   @apply bg-colors-bgColor text-colors-textPrimaryColor font-font;
   scrollbar-width: none;
 }
-.custom-border {
-  border: 4px solid;
-  border-image-source: linear-gradient(269.62deg, #696969 28.05%, #ffffff 100%);
+.effect-custom {
+  @apply overflow-hidden;
+  span {
+    z-index: 1;
+  }
+}
+
+.effect-custom::before {
+  @apply flex items-center justify-center absolute -right-full w-full h-full rounded-lg;
+  content: "";
+  transition: all 0.4s;
+  &.effect-custom-default {
+    @apply bg-colors-bgColor;
+  }
+  &.effect-custom-outline {
+    @apply bg-colors-primary rounded-none border-2 border-colors-primary;
+  }
+}
+.effect-custom:hover {
+  &.effect-custom-outline {
+    @apply text-colors-bgColor;
+  }
+  &.effect-custom-default {
+    @apply text-colors-primary;
+  }
+}
+.effect-custom:hover::before {
+  @apply right-0;
+}
+.activeProduct {
+  @apply bg-colors-primary;
 }

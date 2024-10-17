@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  mode: "jit",
   darkMode: ["class"],
   content: [
     "./src/**/*.{js,jsx,ts,tsx}", // Đường dẫn đến các file sử dụng Tailwind
@@ -8,6 +9,12 @@ export default {
   ],
   theme: {
     extend: {
+      backdropBlur: {
+        32: "32px", // Thêm giá trị cho backdrop-filter
+      },
+      boxShadow: {
+        custom: "-4px 4px 24px 0px #38383826", // Thêm giá trị cho box-shadow
+      },
       screens: {
         xxl: "1920px",
       },
@@ -28,5 +35,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar")],
 };
