@@ -161,11 +161,21 @@ const CarouselItem = React.forwardRef(({ className, ...props }, ref) => {
 CarouselItem.displayName = "CarouselItem";
 
 const CarouselPrevious = React.forwardRef(
-  ({ className, variant = "outline", size = "icon", ...props }, ref) => {
+  (
+    { className, variant = "outline", size = "icon", onClick, ...props },
+    ref
+  ) => {
     const { orientation, scrollPrev, canScrollPrev } = useCarousel();
     if (!canScrollPrev) {
       return null; // Do not render the button if it cannot scroll next
     }
+    const handleClick = (event) => {
+      if (onClick) {
+        onClick(event); // Gọi hàm onClick nếu có
+      }
+      scrollPrev(); // Cuộn về trước
+    };
+
     return (
       <Button
         ref={ref}
@@ -179,7 +189,7 @@ const CarouselPrevious = React.forwardRef(
           className
         )}
         disabled={!canScrollPrev}
-        onClick={scrollPrev}
+        onClick={handleClick}
         {...props}
       >
         <MdKeyboardArrowLeft size={80} />
@@ -191,11 +201,21 @@ const CarouselPrevious = React.forwardRef(
 CarouselPrevious.displayName = "CarouselPrevious";
 
 const CarouselNext = React.forwardRef(
-  ({ className, variant = "outline", size = "icon", ...props }, ref) => {
+  (
+    { className, variant = "outline", size = "icon", onClick, ...props },
+    ref
+  ) => {
     const { orientation, scrollNext, canScrollNext } = useCarousel();
     if (!canScrollNext) {
       return null; // Do not render the button if it cannot scroll next
     }
+    const handleClick = (event) => {
+      if (onClick) {
+        onClick(event); // Gọi hàm onClick nếu có
+      }
+      scrollNext(); // Cuộn về trước
+    };
+
     return (
       <Button
         ref={ref}
@@ -209,7 +229,7 @@ const CarouselNext = React.forwardRef(
           className
         )}
         disabled={!canScrollNext}
-        onClick={scrollNext}
+        onClick={handleClick}
         {...props}
       >
         <MdKeyboardArrowRight size={80} />
