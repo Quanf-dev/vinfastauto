@@ -15,7 +15,7 @@ export default function MainMenuProduct({ isShowMenu }) {
   console.log(isShowMenu);
   return (
     <div
-      className={`px-10 w-full h-[660px] fixed ${isShowMenu === "MenuSanPham" ? "top-[72px]" : "-top-[660px]"}  bg-[#07070780] backdrop-blur-3xl text-colors-bgColor flex gap-20`}
+      className={`px-10 w-full h-[660px] fixed ${isShowMenu === "MenuSanPham" ? "top-[72px]" : "-top-[660px]"} transition-top ease-out duration-100   bg-[#07070780] backdrop-blur-3xl text-colors-bgColor flex gap-20`}
     >
       <ul className="mt-10">
         {menuText.map((item) => (

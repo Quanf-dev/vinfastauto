@@ -6,7 +6,11 @@ body {
 .effect-custom {
   @apply overflow-hidden;
   span {
+    @apply flex items-center;
     z-index: 1;
+    &:nth-child(2) {
+      display: none;
+    }
   }
 }
 
@@ -22,6 +26,10 @@ body {
   }
 }
 .effect-custom:hover {
+  span:nth-child(2) {
+    @apply ml-2;
+    display: flex;
+  }
   &.effect-custom-outline {
     @apply text-colors-bgColor;
   }
