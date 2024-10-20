@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@100;200;300;400;500:600;700&display=swap");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./base.scss";
+@import "./resert.scss";
+
+@layer components {
+  ::-webkit-scrollbar-thin {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #8e8e97;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thin {
+    background-color: #8e8e97;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #6c6c76;
+  }
+}
