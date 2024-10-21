@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@100;200;300;400;500:600;700&display=swap");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./base.scss";
+@import "./resert.scss";
+
+@layer base {
+  ::-webkit-scrollbar-button {
+    display: none; /* Ẩn nút cuộn */
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px; /* Chiều rộng thanh cuộn */
+    height: 8px; /* Chiều cao thanh cuộn */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #8e8e97; /* Màu cho thanh cuộn */
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 34px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #262338;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #6e7191;
+    border-radius: 8px;
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7e81a1;
+  }
+}

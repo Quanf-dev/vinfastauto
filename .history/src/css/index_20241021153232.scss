@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@100;200;300;400;500:600;700&display=swap");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./base.scss";
+@import "./resert.scss";
+
+@layer base {
+  ::-webkit-scrollbar-button {
+    display: none; /* Ẩn nút cuộn */
+  }
+
+  ::-webkit-scrollbar {
+    height: 14px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the track */
+    margin-left: 500px;
+    margin-right: 500px; /* This will create space on the left of the scrollbar */
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    height: 5px;
+    border-radius: 10px; /* Rounded corners */
+  }
+}
