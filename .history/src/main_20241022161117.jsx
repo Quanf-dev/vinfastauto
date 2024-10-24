@@ -18,7 +18,7 @@ createRoot(document.getElementById("root")).render(
     <Topbar />
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
       </Routes>
     </Router>
     <Footer />

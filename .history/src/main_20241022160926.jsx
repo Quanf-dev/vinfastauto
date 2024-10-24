@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import Topbar from "./components/Header/Topbar";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Router } from "lucide-react";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -19,6 +19,8 @@ createRoot(document.getElementById("root")).render(
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
     <Footer />
