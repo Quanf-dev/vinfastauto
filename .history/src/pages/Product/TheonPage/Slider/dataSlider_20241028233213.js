@@ -12,5 +12,3 @@ const dataSlider = [
     urlImg: "images/Product/Thenon/image55.png",
   },
 ];
-
-export default dataSlider;

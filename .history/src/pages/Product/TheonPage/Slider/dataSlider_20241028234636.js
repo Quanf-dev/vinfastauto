@@ -7,10 +7,6 @@ const dataSlider = [
     id: 2,
     urlImg: "images/Product/Thenon/image22.png",
   },
-  {
-    id: 3,
-    urlImg: "images/Product/Thenon/image55.png",
-  },
 ];
 
 export default dataSlider;

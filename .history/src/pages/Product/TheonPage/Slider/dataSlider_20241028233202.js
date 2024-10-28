@@ -5,12 +5,10 @@ const dataSlider = [
   },
   {
     id: 2,
-    urlImg: "images/Product/Thenon/image22.png",
+    urlImg: "images/Product/Thenon/image11.png",
   },
   {
     id: 3,
-    urlImg: "images/Product/Thenon/image55.png",
+    urlImg: "images/Product/Thenon/image11.png",
   },
 ];
-
-export default dataSlider;

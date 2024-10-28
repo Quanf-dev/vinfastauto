@@ -39,6 +39,7 @@ export default function Slider() {
           size={86}
           color="#8E8E97"
           className=" absolute left-[568px] bottom-0 cursor-pointer"
+          onClick={() }
         />
         <MdKeyboardArrowRight
           size={86}

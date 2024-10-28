@@ -1,19 +1,13 @@
-import React, { act, useState } from "react";
+import React from "react";
 import dataSlider from "./dataSlider";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 export default function Slider() {
-  const [active, setActive] = useState(1);
   const picks = [
     "/images/Product/Thenon/image57.svg",
     "/images/Product/Thenon/image58.svg",
     "/images/Product/Thenon/image59.svg",
   ];
-
-  const handleActiveSlide = (left) =>
-    left === "left"
-      ? setActive(active === 1 ? dataSlider.length : active - 1)
-      : setActive(active === dataSlider.length ? 1 : active + 1);
   return (
     <>
       {dataSlider.map((item) => (
