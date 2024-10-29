@@ -1,0 +1,83 @@
+html,
+body {
+  @apply bg-colors-bgColor text-colors-textPrimaryColor font-font;
+  scrollbar-width: none;
+}
+
+.clip-path-parallelogram {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.custom-effect-scale {
+  transform: scale(70%);
+  filter: grayscale(100%) brightness(0.6);
+}
+.custom-border {
+  @apply border-solid border-[1px];
+  border-image-source: linear-gradient(
+    180deg,
+    #cedce2 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-image-slice: 1;
+  box-shadow: 4px 0px 16px 0px #0000001a;
+  backdrop-filter: blur(32px);
+  color: #8e8e97;
+}
+.gradiant {
+  background: linear-gradient(360deg, #000000 0%, rgba(217, 217, 217, 0) 100%);
+}
+.border-gradient {
+  border-width: 2px;
+  border-style: solid;
+  border-image-source: linear-gradient(
+    90deg,
+    #f1f1f1 0%,
+    #1464f4 51.35%,
+    #eaeaea 100%
+  );
+  border-image-slice: 1;
+}
+.effect-custom {
+  @apply overflow-hidden;
+  span {
+    @apply flex items-center;
+    z-index: 1;
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
+.effect-custom::before {
+  @apply flex items-center justify-center absolute -right-full w-full h-full rounded-lg;
+  content: "";
+  transition: all 0.4s;
+  &.effect-custom-default {
+    @apply bg-colors-bgColor;
+  }
+  &.effect-custom-outline {
+    @apply bg-colors-primary rounded-none border-2 border-colors-primary;
+  }
+}
+.effect-custom:hover {
+  span:nth-child(2) {
+    @apply ml-2;
+    display: flex;
+  }
+  &.effect-custom-outline {
+    @apply text-colors-bgColor;
+  }
+  &.effect-custom-default {
+    @apply text-colors-primary;
+  }
+}
+.effect-custom:hover::before {
+  @apply right-0;
+}
+.activeProduct {
+  @apply bg-colors-primary;
+}
+
+.transition-opacity {
+  transition: opacity 1s ease-in-out;
+}
