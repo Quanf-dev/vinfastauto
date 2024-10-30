@@ -21,7 +21,7 @@ export default function General() {
   ];
   return (
     <div className="h-[1530px] px-10 ">
-      <div className="relative flex h-[670px] ">
+      <div className="relative flex h-[630px] ">
         <div>
           <h1 className="text-[1.5rem] tracking-[1rem] uppercase  text-[#8E8E97]">
             vinfast - theon s

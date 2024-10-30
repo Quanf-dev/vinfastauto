@@ -15,7 +15,7 @@ export default {
       },
       boxShadow: {
         custom: "-4px 4px 24px 0px #38383826",
-        customGeneral: "-4px 4px 24px 0px #38383826",
+        custom: "-4px 4px 24px 0px #38383826",
         customButton: "0px 8px 24px 0px #1464F44D",
       },
       screens: {
