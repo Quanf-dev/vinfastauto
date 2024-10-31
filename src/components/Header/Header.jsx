@@ -12,6 +12,9 @@ import { IoIosLogOut } from "react-icons/io";
 const ReactPlayer = React.lazy(() => import("react-player"));
 
 export default function Header(props) {
+  const showContent =
+    props.urlImage1 === "images/Header/SliderHead/image_207.png" ||
+    props.urlImage1 === "images/Product/VF8/vf8Header.png";
   return (
     <header>
       <Carousel>
@@ -30,24 +33,27 @@ export default function Header(props) {
           </CarouselItem>
           <CarouselItem>
             <div className="w-full h-full relative">
-              {props.urlImage1 === "images/Header/SliderHead/image_207.png" && (
+              {showContent && (
                 <div className="absolute left-1/2 -translate-x-1/2 top-32 flex-col flex items-center gap-5">
                   <img
-                    src="images/Home/SliderHead/logovf9.png"
+                    src={`${props.urlImage1 === "images/Product/VF8/vf8Header.png" ? "public/images/Logo/VF8.svg" : "images/Header/SliderHead/logovf9.png"} `} // nếu router = vf8 thì logo vF8 ngược lại
                     className=""
                     alt=""
                   />
                   <h1 className="text-[#6D7784] text-[32px]">
                     Kiến tạo tương lai, bứt phá giới hạn.
                   </h1>
-                  <Button className="w-auto py-5 px-11 effect-custom effect-custom-default   relative">
-                    <span>Khám phá ngay</span>
-                    <span>
-                      <IoIosLogOut size={22} />
-                    </span>
-                  </Button>
+                  {props.urlImage1 !== "images/Product/VF8/vf8Header.png" && (
+                    <Button className="w-auto py-5 px-11 effect-custom effect-custom-default   relative">
+                      <span>Khám phá ngay</span>
+                      <span>
+                        <IoIosLogOut size={22} />
+                      </span>
+                    </Button>
+                  )}
                 </div>
               )}
+
               <img src={props.urlImage1} />
             </div>
           </CarouselItem>

@@ -20,7 +20,7 @@ export default function General() {
     },
   ];
   return (
-    <div className="h-[1530px] px-10 ">
+    <div className="h-[1430px] px-10 ">
       <div className="relative flex h-[670px] ">
         <div>
           <h1 className="text-[1.5rem] tracking-[1rem] uppercase  text-[#8E8E97]">
