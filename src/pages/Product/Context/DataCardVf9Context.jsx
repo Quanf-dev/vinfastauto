@@ -1,12 +1,10 @@
 // src/context/DataCardContext.js
 import React, { createContext, useContext } from "react";
-import {
-  AiOutlineThunderbolt,
-  BsFuelPump,
-  FaRoute,
-  GiCarDoor,
-  MdOutlineElectricCar,
-} from "react-icons/all";
+import { AiOutlineThunderbolt } from "react-icons/ai";
+import { BsFuelPump } from "react-icons/bs";
+import { FaRoute } from "react-icons/fa";
+import { GiCarDoor } from "react-icons/gi";
+import { MdOutlineElectricCar } from "react-icons/md";
 
 const DataCardContext = createContext();
 

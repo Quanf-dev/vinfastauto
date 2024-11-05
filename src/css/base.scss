@@ -4,6 +4,23 @@ body {
   scrollbar-width: none;
 }
 
+// public
+.CardProductStyle {
+  @apply border-solid border-[1px];
+  border-image-source: linear-gradient(
+    180deg,
+    #cedce2 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 4px 0px 16px 0px #0000001a;
+  backdrop-filter: blur(32px);
+}
+.CardProductPostion {
+  .wrapper {
+    @apply flex absolute bottom-0 gap-3;
+  }
+}
+
 .clip-path-parallelogram {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
