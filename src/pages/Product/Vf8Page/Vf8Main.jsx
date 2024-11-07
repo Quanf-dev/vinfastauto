@@ -2,6 +2,7 @@ import Header from "@/components/Header/Header";
 import LayoutCardProduct from "@/components/Product/Layouts/LayoutCardProduct";
 import React from "react";
 import DataCardProviderVf8 from "../Context/DataCardVf8Context";
+import { useDataCard } from "@/pages/Product/Context/DataCardVf8Context";
 
 export default function Vf8Main() {
   return (

@@ -10,6 +10,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        "small-15": "0.938rem", // 12px
+      },
       backdropBlur: {
         32: "32px",
       },

@@ -9,7 +9,7 @@ import { MdOutlineElectricCar } from "react-icons/md";
 const DataCardContext = createContext();
 
 const DataCardProviderVf8 = ({ children }) => {
-  const DataCardVf8 = [
+  const DataTextCard = [
     {
       iconName: AiOutlineThunderbolt,
       desc: "Công suất tối đa",
@@ -37,8 +37,23 @@ const DataCardProviderVf8 = ({ children }) => {
     },
   ];
 
+  const DataTextBackgroud = [
+    {
+      title: "Mẫu eSUV cỡ trung thời thượng",
+      desc: "VF 8 đạt đến sự kết hợp hoàn hoàn hảo giữa chất lượng và giá trị thông qua công nghệ cao cấp, kỹ thuật sản xuất đặc biệt và dịch vụ tận tâm.",
+    },
+    {
+      title: "GIÁ XE KHÔNG GỒM PIN",
+      desc: ["Bản ECO | 1.090.000.000 VNĐ", "Bản Plus | 1.270.000.000 VNĐ"],
+    },
+    {
+      title: "GIÁ XE GỒM PIN",
+      desc: ["Bản ECO | 1.290.000.000 VNĐ", "Bản Plus | 1.430.000.000 VNĐ"],
+    },
+  ];
+
   return (
-    <DataCardContext.Provider value={DataCardVf8}>
+    <DataCardContext.Provider value={{ DataTextCard, DataTextBackgroud }}>
       {children}
     </DataCardContext.Provider>
   );
