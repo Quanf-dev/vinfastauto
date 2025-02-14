@@ -1,9 +1,9 @@
 import React from "react";
 import CardSection from "./CardSection/CardSection";
 import Slider_carSection from "./Slider_carSection/Slider_carSection";
-import IndexContent from "./Content/IndexContent";
 import IndexJoin from "./JoinSection/IndexJoin";
 import Header from "@/components/Header/Header";
+import IndexContent from "./Content/IndexContent";
 export default function Home() {
   return (
     <div>
