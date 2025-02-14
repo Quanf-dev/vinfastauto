@@ -1,12 +1,9 @@
 import React from "react";
 
 import CardProduct from "../ProductCard";
+import { useDataCard } from "@/pages/Product/Context/DataCardVf8Context";
 
-export default function LayoutCardProduct({
-  Logo,
-  DataTextCard,
-  DataTextBackgroud,
-}) {
+export default function LayoutCardProduct({ Logo }) {
   const { DataTextCard, DataTextBackgroud } = useDataCard(); // Lấy dữ liệu từ Context
   return (
     <div className="w-full px-10 py-10 h-[967px] relative">
@@ -19,13 +16,13 @@ export default function LayoutCardProduct({
             <h3 className="text-2xl">{item.title}</h3>
             {/* Kiểm tra nếu desc là mảng thì render từng mục */}
             {Array.isArray(item.desc) ? (
-              <ul className="text-small-15 font-light">
+              <ul className="font-light text-small-15">
                 {item.desc.map((price, i) => (
                   <li key={i}>{price}</li>
                 ))}
               </ul>
             ) : (
-              <p className="text-small-15 font-light">{item.desc}</p>
+              <p className="font-light text-small-15">{item.desc}</p>
             )}
           </li>
         ))}

@@ -21,8 +21,6 @@ createRoot(document.getElementById("root")).render(
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/thenons" element={<ThenonMain />} />
-        <Route path="/vf8" element={<Vf8Main />} />
       </Routes>
     </Router>
     <Footer />
