@@ -1,7 +1,6 @@
 import Header from "@/components/Header/Header";
 import React from "react";
 import MainSlider from "./Slider/MainSlider";
-import Contentmain from "./Content/Contentmain";
 export default function ThenonMain() {
   return (
     <div>
@@ -11,7 +10,6 @@ export default function ThenonMain() {
         urlImage2="images/Header/SliderHead/image1821.png"
       />
       <MainSlider />
-      <Contentmain />
     </div>
   );
 }
