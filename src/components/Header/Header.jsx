@@ -32,9 +32,9 @@ export default function Header(props) {
             </Suspense>
           </CarouselItem>
           <CarouselItem>
-            <div className="w-full h-full relative">
+            <div className="relative w-full h-full ">
               {showContent && (
-                <div className="absolute left-1/2 -translate-x-1/2 top-32 flex-col flex items-center gap-5">
+                <div className="absolute flex flex-col items-center gap-5 -translate-x-1/2 left-1/2 top-32">
                   <img
                     src={`${props.urlImage1 === "images/Product/VF8/vf8Header.png" ? "public/images/Logo/VF8.svg" : "images/Header/SliderHead/logovf9.png"} `} // nếu router = vf8 thì logo vF8 ngược lại
                     className=""
@@ -44,7 +44,7 @@ export default function Header(props) {
                     Kiến tạo tương lai, bứt phá giới hạn.
                   </h1>
                   {props.urlImage1 !== "images/Product/VF8/vf8Header.png" && (
-                    <Button className="w-auto py-5 px-11 effect-custom effect-custom-default   relative">
+                    <Button className="relative w-auto py-5 px-11 effect-custom effect-custom-default">
                       <span>Khám phá ngay</span>
                       <span>
                         <IoIosLogOut size={22} />

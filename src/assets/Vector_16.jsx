@@ -3,9 +3,9 @@ import React from "react";
 export default function Vector_16(props) {
   return (
     <svg
-      className={`${props.className}`}
+      className={`${props.className} `}
       width="900"
-      height="52"
+      height="8s2"
       viewBox="0 0 704 52"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

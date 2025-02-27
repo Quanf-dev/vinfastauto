@@ -6,16 +6,10 @@ import Header from "@/components/Header/Header";
 import IndexContent from "./Content/IndexContent";
 export default function Home() {
   return (
-    <div>
-      <Header
-        urlVideo="video\bike.mp4"
-        urlImage1="images/Header/SliderHead/image_207.png"
-        urlImage2="images/Header/SliderHead/image80.png"
-      />
+    <div className="w-screen max-w-[1440px] mx-auto overflow-x-hidden ">
       <Slider_carSection />
       <CardSection />
       <IndexContent />
-      <IndexJoin />
     </div>
   );
 }

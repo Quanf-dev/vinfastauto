@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ContentPin() {
   return (
-    <div className="h-[800px] flex flex-col gap-11">
+    <div className="flex flex-col h-full gap-11">
       <div className="flex flex-col items-center gap-5 ">
         <h1 className="text-[2rem]">Pin và trạm sạc</h1>
         <p className="max-w-[800px] text-center">

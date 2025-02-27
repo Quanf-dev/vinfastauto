@@ -54,7 +54,7 @@ export default function MenuHambuger({ isShowMenu }) {
   return (
     <>
       <div
-        className={`${isShowMenu === "Menuhamburger" ? "right-0" : "-right-[341px]"} transform ease-in duration-300 text-colors-bgColor  z-30 w-[341px] pb-[10rem] h-[800px] fixed bg-[#333339B2]  backdrop-blur-[10px] shadow-custom overflow-scroll overflow-x-hidden  
+        className={`${isShowMenu === "Menuhamburger" ? "right-0" : "-right-[641px]"} transform ease-in duration-300 text-colors-bgColor  z-30 w-[341px] pb-[10rem] h-[800px] fixed bg-[#333339B2]  backdrop-blur-[10px] shadow-custom overflow-scroll overflow-x-hidden  
        scrollbar-thumb-black  scrollbar-track-slate-400  `}
       >
         <ul className="ml-6 mt-[80px] flex flex-col gap-10 ">
@@ -62,7 +62,7 @@ export default function MenuHambuger({ isShowMenu }) {
             <li key={item.id}>
               <h1 className="text-[22px]">{item.title}</h1>
               {item.desc.map((item) => (
-                <p className="cursor-pointer leading-10 text-base font-thin ">
+                <p className="text-base font-thin leading-10 cursor-pointer ">
                   {item.text}
                 </p>
               ))}

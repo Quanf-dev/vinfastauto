@@ -8,8 +8,8 @@ export default function CardSection() {
   const Lists = ["Cao Cấp", "Trung Cấp", "Phổ Thông"];
 
   return (
-    <div className="h-auto w-full px-10 flex-col flex gap-28  ">
-      <div className="flex ">
+    <div className="flex flex-col w-full h-auto px-10 s gap-28 ">
+      <div className="flex justify-center ">
         <Card DataCard={DataCar} />
       </div>
       {/*************/}
@@ -17,7 +17,7 @@ export default function CardSection() {
       {/*************/}
       <div className="flex flex-col items-center">
         <h1 className="text-[2rem]">XE MÁY ĐIỆN</h1>
-        <ul className="flex gap-24 mt-16  uppercase items-center">
+        <ul className="flex items-center gap-24 mt-16 uppercase">
           {Lists.map((item, index) => (
             <li
               className={`${list === item ? "text-colors-primary font-bold text-2xl" : ""} cursor-pointer`}
